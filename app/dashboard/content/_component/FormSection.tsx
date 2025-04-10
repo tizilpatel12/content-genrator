@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { TEMPLATE } from './TemplateListSelection'; // adjust if needed
+import { TEMPLATE } from '@/app/dashboard/_components/TemplateListSelection'; // adjust if needed
 
 interface PROPS {
   selectedTemplate?: TEMPLATE;
