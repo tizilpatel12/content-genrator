@@ -9,7 +9,7 @@ function Header() {
         <input type="text" placeholder="Search..." className="outline-none"/>
       </div>
       <div>
-        <h2 className="bg-primary p-1 rounded-full  text-white px-2">Join Membership For Just Free</h2>
+        {/* <h2 className="bg-primary p-1 rounded-full  text-white px-2">Join Membership For Just Free</h2> */}
       </div>
     </div>
   )
