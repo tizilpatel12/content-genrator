@@ -5,13 +5,15 @@ import { Textarea } from '@/components/ui/textarea';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { TEMPLATE } from '@/app/dashboard/_components/TemplateListSelection'; // adjust if needed
+import { Loader2Icon } from 'lucide-react';
 
 interface PROPS {
   selectedTemplate?: TEMPLATE;
+  loading?: boolean;
   userFormInput?: any;
 }
 
-function FormSection({ selectedTemplate, userFormInput }: PROPS) {
+function FormSection({ selectedTemplate, userFormInput,loading }: PROPS) {
   const [formData, setFormData] = useState<Record<string, string>>({});
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -53,7 +55,7 @@ function FormSection({ selectedTemplate, userFormInput }: PROPS) {
                 ) : null}
               </div>
             ))}
-            <Button type='submit' className='w-full py-6'>Generate Content</Button>
+            <Button type='submit' className='w-full py-6' disabled={loading}>{loading&&<Loader2Icon className='animate-spin'/>}Generate Content</Button>
           </form>
         </>
       )}
