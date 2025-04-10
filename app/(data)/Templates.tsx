@@ -148,7 +148,7 @@ export default  [
         icon: 'https://cdn-icons-png.flaticon.com/128/1686/1686815.png',
         category: 'Writing Assistant',
         slug: 'text-improver',
-        aiPrompt: 'Given textToImprove, Rewrite text without any grammar mistake and professionally in rich text editor format',
+        aiPrompt: 'Given textToImprove, Rewrite text without any grammar mistake and professionally in rich text editor format dont give explation just improved text',
         form: [
             {
                 label: 'Enter text that you want to re-write or improve',
